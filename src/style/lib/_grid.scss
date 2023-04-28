@@ -1,0 +1,77 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: content-box;
+    @media (max-width:1440px){
+        max-width: calc(((1140 - 664)*(100vw - 768px))/(1440 - 768) + 664px);
+    }
+    @media (max-width:768px){
+        max-width: calc(((664 - 264)*(100vw - 320px))/(768 - 320) + 264px);
+    }
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include fb(percentage(calc($i/12)))
+    }
+    .m{
+        &b{
+            &-#{$i*10}{margin-bottom: #{$i*10}px;}
+            &-a{margin-bottom: auto;}
+        }
+        &t{
+            &-#{$i*10}{margin-top: #{$i*10}px;}
+            &-a{margin-top: auto;}
+        }
+        &r{
+            &-#{$i*10}{margin-right: #{$i*10}px;}
+            &-a{margin-right: auto;}
+        }
+        &l{
+            &-#{$i*10}{margin-left: #{$i*10}px;}
+            &-a{margin-left: auto;}
+        }
+    }
+}
+@media(max-width:1366px){
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            @include fb(percentage(calc($i/12)))
+        }
+    }
+}
+@media(max-width:1024px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @include fb(percentage(calc($i/12)))
+        }
+    }
+}
+@media(max-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            @include fb(percentage(calc($i/12)))
+        }
+    }
+}
+@media(max-width:600px){
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            @include fb(percentage(calc($i/12)))
+        }
+    }
+}
+@media(max-width:375px){
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} {
+            @include fb(percentage(calc($i/12)))
+        }
+    }
+}

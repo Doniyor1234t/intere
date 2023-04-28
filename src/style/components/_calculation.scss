@@ -1,0 +1,212 @@
+.calculation {
+  position: relative;
+  padding: 60px 0;
+  background: $black;
+  z-index: 0;
+  
+  // .calculation__title
+  
+  &__title {
+    // margin-bottom: 30px;
+    text-align: center;
+    margin: 0 -10px 30px -10px;
+  }
+  
+  // .calculation__block
+  
+  &__block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .calculation__text
+
+  &__text {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $white;
+    margin: 0 auto;
+    max-width: 285px;
+    @media (max-width:1440px){
+      font-size: calc(((16 - 15)*(100vw - 768px))/(1440 - 768) + 15px) ;
+    }
+    @media (max-width:768px){
+      letter-spacing: calc(((0.02 - 0)*(100vw - 320px))/(768 - 320) + 0px);
+      font-size: calc(((15 - 12)*(100vw - 320px))/(768 - 320) + 12px);
+    }
+  }
+
+  // .calculation__select
+
+  &__select {
+    margin: 50px 0;
+    position: relative;
+    z-index: 100;
+    display: block;
+  }
+  
+  &__input{
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    background: transparent;
+    width: 280px;
+    height: 40px;
+    border-bottom: 1px solid $white;
+    padding:0 16px 20px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150% ;
+    letter-spacing: 0.02em;
+    @media (max-width:428px){
+      width: 304px;
+    }
+  }
+  &__list{
+    color: $white;
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    color: $white;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150% ;
+    letter-spacing: 0.02em;
+    background: $black;
+    border-radius:0 0 15px 15px;
+    box-shadow: 2px 2px 5px $white;
+    transition: all .6s;
+    height: 0;
+    overflow: hidden;
+    &.active{
+      height:160px;
+      z-index: 1;
+    }
+  }
+
+  &__item{
+    cursor: pointer;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      width: 0%;
+      height: 1px;
+      background: $white;
+      transition: all .5s;
+    }
+    &:hover{
+      &::before{
+        width: 80%;
+      }
+    }
+  }
+
+  // .calculation__btn
+
+  &__btn {
+  }
+}
+.calc {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  font-family: 'Junge';
+  font-weight: 400;
+  font-size: 190px;
+  line-height: 231px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  opacity: 0.4;
+  user-select: none;
+  @media (max-width:1440px){
+    font-size: calc(((190 - 142)*(100vw - 768px))/(1440 - 768) + 142px);
+    line-height: calc(((231 - 0)*(100vw - 768px))/(1440 - 768) + 0px);
+  }
+  @media (max-width:768px){
+    font-size: calc(((142 - 71)*(100vw - 320px))/(768 - 320) + 71px);
+    line-height: calc(((231 - 0)*(100vw - 320px))/(768 - 320) + 0px);
+  }
+  // .calc__/
+
+  &__1 {
+    position: absolute;
+    top: -30px;
+    left: 19px;
+    transform: rotate(40deg);
+    @media (max-width:1440px){
+      top: calc(((-30 - 90)*(100vw - 768px))/(1440 - 768) + 90px);
+      left: calc(((19 + 2)*(100vw - 768px))/(1440 - 768) - 2px);
+    }
+  }
+
+  // .calc__+
+
+  &__2 {
+    position: absolute;
+    top: 254px;
+    left: 189px;
+    transform: rotate(-20deg);
+    @media (max-width:1440px){
+      top: calc(((254 - 329)*(100vw - 320px))/(1440 - 320) + 329px);
+      left: calc(((19 - 16)*(100vw - 320px))/(1440 - 320) + 16px);
+    }
+  }
+  
+  // .calc__-
+  
+  &__3 {
+    position: absolute;
+    top: 109px;
+    right: 221.74px;
+    transform: rotate(30deg);
+    @media (max-width:1440px){
+      top: calc(((190 - 171)*(100vw - 320px))/(1440 - 320) + 171px);
+      right: calc(((221.74 + 16)*(100vw - 320px))/(1440 - 320) - 16px);
+    }
+  }
+
+  // .calc__=
+
+  &__4 {
+    position: absolute;
+    top: 284.84px;
+    right: 5.32px;
+    transform: rotate(-30deg);
+    @media (max-width:1440px){
+      // font-size: ;
+      top: calc(((284.84 - 341)*(100vw - 320px))/(1440 - 320) + 341px);
+      right: calc(((5.32 - 2)*(100vw - 320px))/(1440 - 320) + 2px);
+    }
+  }
+
+  // .calc__*
+
+  &__5 {
+    position: absolute;
+    top: -46px;
+    right: 19px;
+  }
+}

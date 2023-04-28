@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.open{
+  overflow-y: hidden;
+  .menu__section{
+    box-shadow: -30px 0px 80px rgba(1, 1, 1, 0.2), -30px 0px 60px rgba(34, 34, 34, 0.05);
+  }
+}
+@import "./components/header.scss";
+@import "./components/main.scss";
+@import "./components/slider.scss";
+@import "./components/services.scss";
+@import "./components/works.scss";
+@import "./components/conection";
+@import "./components/process";
+@import "./components/calculation";
+@import "./components/faqs";
+@import "./components/blog";
+@import "./components/footer.scss";
+@import "./lib/fonts";
+@import "./lib/var.scss";
+@import "./lib/mixin";
+@import "./lib/grid";
+@import "./lib/null";
+@import "./lib/actions";
+.wrapper{
+  height:100%;
+  max-height:100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.main{
+  height: 100%;
+  flex: 1 1 auto;
+}
+body{
+}
+html{
+  scroll-behavior: smooth;
+}

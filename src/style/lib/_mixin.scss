@@ -1,0 +1,20 @@
+@mixin fb($w) {
+  width: $w;
+  max-width: $w;
+  flex-basis: $w;
+  padding: 10px;
+  @media (max-width:1440px){
+    padding: calc(((10 - 8)*(100vw - 768px))/(1440 - 768) + 8px);
+  }
+}
+@mixin flex($a:flex-start,$j:flex-start) {
+  display: flex;
+  align-items: $a;
+  justify-content: $j;
+}
+@mixin img($w,$h){
+  object-fit: cover;
+  width: $w;
+  height: $h;
+  object-position: center;
+}
