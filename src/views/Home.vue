@@ -1,15 +1,3 @@
-<template>
-  <MainItem />
-  <SliderItem />
-  <ServicesItem  :array="services"/>
-  <WorksItem />
-  <AdvantagesItem />
-  <ConectionItem />
-  <ProcessItem />
-  <CalculationItem />
-  <FaqsItem />
-  <BlogsItem />
-</template>
 
 <script>
 import MainItem from "@/components/pages/MainItem.vue";
@@ -73,3 +61,18 @@ export default {
   },
 }
 </script>
+
+<template>
+  <div>
+    <MainItem />
+    <SliderItem />
+    <ServicesItem  :array="services"/>
+    <WorksItem />
+    <AdvantagesItem />
+    <ConectionItem />
+    <ProcessItem />
+    <CalculationItem />
+    <FaqsItem />
+    <BlogsItem /> 
+  </div>
+</template>

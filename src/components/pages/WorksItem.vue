@@ -1,3 +1,37 @@
+<script>
+
+import { Navigation, Pagination, Controller} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/scss';
+// import 'swiper/scss/pagination';
+// import "swiper/css/thumbs";
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  data() {
+    return {
+      controlledSwiper: null,
+      controlledSwiper2: null
+    };
+  },
+  methods: {
+      setControlledSwiper(swiper) {
+        this.controlledSwiper = swiper;
+      },
+      setControlledSwiper2(swiper) {
+        this.controlledSwiper2 = swiper;
+      },
+  },
+  setup() {
+    return {
+      modules: [Pagination, Navigation, Controller],
+    };
+  },
+
+}
+</script>
 
 <template>
   <div class="works">
@@ -110,41 +144,6 @@ We take the time to fully understand culture, values and goals—creating highly
     </div>
   </div>
 </template>
-
-<script>
-
-import { Navigation, Pagination, Controller} from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/scss';
-// import 'swiper/scss/pagination';
-// import "swiper/css/thumbs";
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  data() {
-    return {
-      controlledSwiper: null,
-      controlledSwiper2: null
-    };
-  },
-  methods: {
-      setControlledSwiper(swiper) {
-        this.controlledSwiper = swiper;
-      },
-      setControlledSwiper2(swiper) {
-        this.controlledSwiper2 = swiper;
-      },
-  },
-  setup() {
-    return {
-      modules: [Pagination, Navigation, Controller],
-    };
-  },
-
-}
-</script>
 
 <style>
 

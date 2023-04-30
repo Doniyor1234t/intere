@@ -1,3 +1,8 @@
+<script>
+export default {
+
+}
+</script>
 <template>
   <div class="project">
     <h3 class="project__title">Let's talk about your project</h3>
@@ -23,11 +28,6 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
 
 <style>
 

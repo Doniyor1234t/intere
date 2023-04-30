@@ -1,3 +1,47 @@
+
+<script>
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/scss';
+export default {
+  data() {
+    return {
+      slides: [
+          {
+            img:'slide1.png',
+            title: "About us"
+          },
+          {
+            img:'slide2.png',
+            title: "About us"
+          },
+          {
+            img:'slide3.png',
+            title: "About us"
+          },
+          {
+            img:'slide1.png',
+            title: "About us"
+          },
+          {
+            img:'slide2.png',
+            title: "About us"
+          },
+      ]
+    }
+  },
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
+}
+</script>
+
 <template>
   <div class="slide">
     <swiper 
@@ -30,7 +74,7 @@
       <swiper-slide v-for="(item) in slides" :key="item" class="slide__body">
         <div class="slide__item">
           <div class="slide__image">
-            <img :src="`${item.img}`"/>
+            <img src="@/assets/img/images/slide1.png"/>
           </div>
           <div class="slide__content">
             <h2 class="slide__title">{{ item.title }}</h2>
@@ -56,50 +100,6 @@ We take the time to fully understand culture, values and goals—creating highly
     </swiper>
   </div>
 </template>
-
-<script>
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/scss';
-// import 'swiper/scss/pagination';
-export default {
-  data() {
-    return {
-      slides: [
-          {
-            img:'/src/assets/img/images/slide1.png',
-            title: "About us"
-          },
-          {
-            img:'/src/assets/img/images/slide2.png',
-            title: "About us"
-          },
-          {
-            img:'/src/assets/img/images/slide3.png',
-            title: "About us"
-          },
-          {
-            img:'/src/assets/img/images/slide1.png',
-            title: "About us"
-          },
-          {
-            img:'/src/assets/img/images/slide2.png',
-            title: "About us"
-          },
-      ]
-    }
-  },
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    return {
-      modules: [Pagination],
-    };
-  },
-}
-</script>
 
 <style>
 

@@ -1,3 +1,8 @@
+<script>
+export default {
+
+}
+</script>
 <template>
   <div class="process">
     <div class="container">
@@ -62,11 +67,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  
-}
-</script>
 
 <style>
 

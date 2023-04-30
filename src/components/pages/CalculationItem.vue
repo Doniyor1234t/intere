@@ -1,3 +1,14 @@
+<script>
+export default {
+  data() {
+    return {
+      toggle:false
+    }
+  },
+}
+</script>
+
+
 <template>
   <div class="calculation">
     <div class="calc">
@@ -29,15 +40,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      toggle:false
-    }
-  },
-}
-</script>
 
 <style>
 

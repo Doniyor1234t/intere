@@ -1,3 +1,24 @@
+<script>
+export default {
+  props: ["className"],
+  data() {
+    return {
+      darkMode: true
+    }
+  },  
+  methods: {
+    darking(){
+      this.darkMode = false
+      this.$parent.$emit("darked", this.darkMode)
+    },
+    lighting(){
+      this.darkMode = true
+      this.$parent.$emit("lighted", this.darkMode)
+    },
+  },
+}
+</script>
+
 <template>
   <div :class= "`menu__section ${className? 'active': ''}`">
         <nav class="menu__body">
@@ -38,26 +59,6 @@
       </div>
     </template>
 
-<script>
-export default {
-  props: ["className"],
-  data() {
-    return {
-      darkMode: true
-    }
-  },  
-  methods: {
-    darking(){
-      this.darkMode = false
-      this.$parent.$emit("darked", this.darkMode)
-    },
-    lighting(){
-      this.darkMode = true
-      this.$parent.$emit("lighted", this.darkMode)
-    },
-  },
-}
-</script>
 
 <style>
 

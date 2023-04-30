@@ -1,3 +1,22 @@
+<script>
+export default {
+  data() {
+    return {
+      slide: document.getElementsByClassName("slide")
+    }
+  },
+  methods: {
+    scrolling(){
+      let rect = this.slide[0].getBoundingClientRect()
+      console.log(rect.top);
+      window.scrollTo(0,1020)
+    }
+  },
+
+}
+</script>
+
+
 <template>
   <section class="main__section">
     <div class="main__star-1">
@@ -18,7 +37,7 @@
     <div class="container">
       <div class="main__body">
         <div class="main__main-section">
-          <h1 class="main__title">Modern Interior Design studio</h1>
+          <h1 class="main__title"> Interior Design studio</h1>
           <div class="main__subtitle">Provides Construction and Consulting services to clients who value the highest levels of quality and services for their commercial.</div>
           <button class="main__btn">View projects<span></span></button>
         </div>
@@ -55,25 +74,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      slide: document.getElementsByClassName("slide")
-    }
-  },
-  methods: {
-    scrolling(){
-      let rect = this.slide[0].getBoundingClientRect()
-      console.log(rect.top);
-      window.scrollTo(0,1020)
-      
-      // console.log(getBoundingClientRect()[0]);
-    }
-  },
-
-}
-</script>
 
 <style>
 
