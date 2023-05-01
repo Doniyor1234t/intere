@@ -1,5 +1,5 @@
 <script>
-import TeamItem from '@/components/pages/about/TeamItem.vue';
+import TeamItem from '../components/pages/about/TeamItem.vue';
 import BlogsItem from '../components/pages/BlogsItem.vue';
 import CalculationItem from '../components/pages/CalculationItem.vue';
 
