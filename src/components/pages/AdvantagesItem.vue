@@ -1,6 +1,6 @@
 <template>
   <div class="advantages">
-    <ServicesItem :array="advantages" />
+    <services-item :array="advantages" />
     <div class="container">
       <button class="advantages__btn">Get Advice<span></span></button>
     </div>
