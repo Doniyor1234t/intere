@@ -23,7 +23,7 @@ export default {
   <div :class= "`menu__section ${className? 'active': ''}`">
         <nav class="menu__body">
           <ul class="menu__list">
-            <li class="menu__item"><router-link to="/" @click="$emit('changeClass')" class="menu__link">Home</router-link></li>
+            <li class="menu__item"><router-link to="/intere" @click="$emit('changeClass')" class="menu__link">Home</router-link></li>
             <li class="menu__item"><router-link @click="$emit('changeClass')" to="/about" class="menu__link">About us</router-link></li>
             <li class="menu__item"><a class="menu__link" href="#" @click="$emit('changeClass')">Portfolio</a></li>
             <li class="menu__item"><a class="menu__link" href="#" @click="$emit('changeClass')">Calculator</a></li>
