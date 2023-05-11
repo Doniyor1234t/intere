@@ -63,7 +63,6 @@ export default {
 </script>
 
 <template>
-  <div>
     <MainItem />
     <SliderItem />
     <ServicesItem  :array="services"/>
@@ -73,6 +72,5 @@ export default {
     <ProcessItem />
     <CalculationItem />
     <FaqsItem />
-    <BlogsItem /> 
-  </div>
+    <BlogsItem />
 </template>

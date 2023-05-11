@@ -34,7 +34,7 @@ export default {
             <li class="calculation__item">Design</li>
           </ul>
         </div>
-        <button type="submit" class="calculation__btn __dark-mode">Leave a request <span></span></button>
+        <router-link to="/intere/calculator" type="submit" class="calculation__btn __dark-mode">Leave a request <span></span></router-link>
       </div>
     </div>
   </div>

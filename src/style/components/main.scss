@@ -1,6 +1,8 @@
 .main {
   margin-top: 200px;
-  margin-bottom: 48px;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  flex-flow: column nowrap;
   @media (max-width:1440px){
     margin-top: calc(((200 - 220)*(100vw - 768px))/(1440 - 768) + 220px);
   }

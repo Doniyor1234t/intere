@@ -8,8 +8,13 @@ body.open{
   .menu__section{
     box-shadow: -30px 0px 80px rgba(1, 1, 1, 0.2), -30px 0px 60px rgba(34, 34, 34, 0.05);
   }
-}
-@import "./components/header.scss";
+} 
+@import "./lib/fonts";
+@import "./lib/var.scss";
+@import "./lib/mixin";
+@import "./lib/grid";
+@import "./lib/null";
+@import "./lib/actions";
 @import "./components/main.scss";
 @import "./components/slider.scss";
 @import "./components/services.scss";
@@ -20,12 +25,6 @@ body.open{
 @import "./components/faqs";
 @import "./components/blog";
 @import "./components/footer.scss";
-@import "./lib/fonts";
-@import "./lib/var.scss";
-@import "./lib/mixin";
-@import "./lib/grid";
-@import "./lib/null";
-@import "./lib/actions";
 .wrapper{
   // height:100%;  
   min-height:100%;
@@ -38,11 +37,13 @@ body.open{
   z-index: 0;
 }
 .main{
-  // height: 100%;
   flex: 1 1 auto;
 }
 body,html{
   height: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
 }
 #app{
   height: 100%;

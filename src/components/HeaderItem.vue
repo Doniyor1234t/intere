@@ -16,13 +16,8 @@ export default{
       }else{
         document.body.classList.remove("open")
       }
-    },
-    // changedClass(v){
-    //   console.log(v);
-    //   this.toggle = !this.toggle
-    // }
+    }
   },
-  //create function which will add class name "longer" to element with class name header__body when page start scrolling
   mounted() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {

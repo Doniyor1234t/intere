@@ -5,7 +5,7 @@ export default {
     return {
       darkMode: true
     }
-  },  
+  },
   methods: {
     darking(){
       this.darkMode = false

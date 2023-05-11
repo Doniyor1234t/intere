@@ -9,6 +9,7 @@
 
   &__title {
     margin-bottom: 60px;
+    color: $white;
     @media (max-width:768px){
       margin-bottom: calc(((60 - 40)*(100vw - 320px))/(768 - 320) + 40px);
     }

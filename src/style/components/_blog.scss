@@ -1,5 +1,6 @@
 .blog {
   margin-top: 160px;
+  margin-bottom: 100px;
   @media (max-width:1440px){
     margin-top: calc(((160 - 120)*(100vw - 768px))/(1440 - 768) + 120px);
   }

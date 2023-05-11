@@ -3,8 +3,6 @@
 import { Navigation, Pagination, Controller} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/scss';
-// import 'swiper/scss/pagination';
-// import "swiper/css/thumbs";
 export default {
   components: {
     Swiper,

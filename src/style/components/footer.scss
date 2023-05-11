@@ -163,7 +163,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover{
+      svg{
+        filter: drop-shadow(4px 3px 1px $white);
+      }
+    }
     svg{
+      transition: all .5s;
       fill: $white-s;
     }
   }

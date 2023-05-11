@@ -66,7 +66,7 @@ export default {
             </div>
           </div>
         </div>
-        <button class="faqs__btn">Ask a question <span></span></button>
+        <router-link to="/intere/form" class="faqs__btn">Ask a question <span></span></router-link>
       </div>
     </div>
   </div>
